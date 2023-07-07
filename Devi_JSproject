@@ -23,12 +23,12 @@ console.log("Minted-->"+Name);
 function listNFTs () {
     for(let i=0;i<devi_NFTs.length;i++)
     {
-        console.log("\nID: \t\t"+(i+1));
-        console.log("Brand Name: "+devi_NFTs[i].Name);
-        console.log("Code: \t\t"+devi_NFTs[i].code);
-        console.log("Type: \t\t"+devi_NFTs[i].type);
-        console.log("Colour: \t"+devi_NFTs[i].colour);
-        console.log("Price: \t\t"+devi_NFTs[i].price);
+        console.log("\nID: \t\t\t\t\t\t"+(i+1));
+        console.log("Brand Name: \t\t"+devi_NFTs[i].Name);
+        console.log("Code: \t\t\t\t\t"+devi_NFTs[i].code);
+        console.log("Type: \t\t\t\t\t"+devi_NFTs[i].type);
+        console.log("Colour: \t\t\t\t"+devi_NFTs[i].colour);
+        console.log("Price(IndianRupees):\t"+devi_NFTs[i].price);
     }
 
 }
@@ -41,6 +41,7 @@ console.log("\n The Total NFTs Minted are:"+devi_NFTs.length);
 // call your functions below this line
 mintNFT("elisha","E121","ethnic/suit","red",1200);
 mintNFT("diva","E111","western/dress","blue",1950);
+mintNFT("sue","F111","western/Pants","black",2000);
 listNFTs();
 getTotalSupply();
 
